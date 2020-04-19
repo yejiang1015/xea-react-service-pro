@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "module": "esnext",
+    "target": "es5",
+    "lib": ["es6", "es7", "dom", "dom.iterable"],
+    "sourceMap": false,
+    "allowJs": false,
+    "jsx": "react",
+    "outDir": "node_modules/tsc-dist",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "moduleResolution": "node",
+    /** 详细信息输出 */
+    "traceResolution": false,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "strict": false,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./src/*"]
+    }
+  },
+  "awesomeTypescriptLoaderOptions": {
+    //Typescript加载选项
+    "forkChecker": true,
+    "useWebpackText": true
+  },
+  "exclude": ["node_modules/**", "dist/**"]
+}

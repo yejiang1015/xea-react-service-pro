@@ -1,0 +1,16 @@
+# !**/.eslintrc*
+node_modules
+dist
+*.svg
+*.ico
+*.json
+.gitignore
+*.md
+*.log
+*.lock
+.vsocde/
+
+# prettier
+*.prettierrc.*
+src/**.js
+src/**/**.js

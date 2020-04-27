@@ -1,12 +1,8 @@
 import * as React from "react";
 
-import { Redirect, Route, Switch } from "react-router";
-
-import LazyLoad from "@/components/LazyLoad";
+import { SwitchViewMain } from "@/routes/SwitchView";
 import { Tabs } from "antd";
 import Warp from "@/components/Warp";
-import __Pages_Main_List from "@/pages/Main/List";
-import __Pages_Main_Setting from "@/pages/Main/Setting";
 
 const { TabPane } = Tabs;
 
@@ -26,23 +22,7 @@ export default class extends Warp {
             <TabPane tab="设置" key="/main/setting"></TabPane>
           </Tabs>
         </header>
-        <Switch>
-          <Route
-            path="/main/"
-            exact
-            component={() => <Redirect to="/main/list" />}
-          ></Route>
-          <Route
-            path="/main/list"
-            exact
-            component={LazyLoad(__Pages_Main_List)}
-          ></Route>
-          <Route
-            path="/main/setting"
-            exact
-            component={LazyLoad(__Pages_Main_Setting)}
-          ></Route>
-        </Switch>
+        <SwitchViewMain />
       </section>
     );
   }

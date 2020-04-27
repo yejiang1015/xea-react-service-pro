@@ -57,6 +57,6 @@
     }
   },
   "lint-staged": {
-    "*.(ts|tsx)": "lint"
+    "*.(ts|tsx)": "npm run lint"
   }
 }

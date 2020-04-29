@@ -1,4 +1,5 @@
-export default {
-  name: 9,
-  age: 8,
+export default () => {
+  return {
+    htmlTitle: "Bug Test",
+  };
 };

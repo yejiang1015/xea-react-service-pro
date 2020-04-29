@@ -9,8 +9,8 @@
     "url": "git+ssh://git@github.com/yejiang1015/xea-react-service-pro.git"
   },
   "scripts": {
-    "serve": "cross-env NODE_ENV=development xea-react-service serve",
-    "build": "cross-env NODE_ENV=production  xea-react-service build",
+    "serve": "cross-env NODE_ENV=development node /Users/yejiang/webhref.com/xea-react-serve/dist/bin/index.js serve",
+    "build": "cross-env NODE_ENV=production  node /Users/yejiang/webhref.com/xea-react-serve/dist/bin/index.js build",
     "lint": "node_modules/typescript/bin/tsc && eslint . --ext '.ts,.tsx'"
   },
   "dependencies": {
@@ -45,7 +45,8 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.1.7",
     "prettier": "^2.0.4",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "umi": "^3.1.2"
   },
   "engines": {
     "node": ">=8.0.0"

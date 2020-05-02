@@ -9,8 +9,8 @@
     "url": "git+ssh://git@github.com/yejiang1015/xea-react-service-pro.git"
   },
   "scripts": {
-    "serve": "cross-env NODE_ENV=development node /Users/yejiang/webhref.com/xea-react-serve/dist/bin/index.js serve",
-    "build": "cross-env NODE_ENV=production  node /Users/yejiang/webhref.com/xea-react-serve/dist/bin/index.js build",
+    "serve": "cross-env NODE_ENV=development react-service serve",
+    "build": "cross-env NODE_ENV=production  react-service build",
     "lint": "node_modules/typescript/bin/tsc && eslint . --ext '.ts,.tsx'"
   },
   "dependencies": {
@@ -31,6 +31,7 @@
     "@types/react-router": "^5.1.5",
     "@typescript-eslint/eslint-plugin": "^2.28.0",
     "@typescript-eslint/parser": "^2.28.0",
+    "@xeajs/react-service": "^1.1.2",
     "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-typescript": "^7.2.1",
